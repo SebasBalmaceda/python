@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% static 'core/img/imagen5.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+
+{% block content %}
+<div class="row">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+<img class="img-fluid avatar" src="{% static 'core/img/icono_avatar.jpg'  %}" alt="">
+       </div>   
+<div class="col-lg-7 col-md-8">
+    <h2 class="section-heading">Sebastian Balmaceda</h2>   
+    <p>Nacido en la pcia. del Chaco, recibido de la carrera Analista de Sistemas en el Instituto Raul Scalabrini Ortiz ubicado en el barrio de Monserrat.A lo largo de la carrera aprendi herramientas tanto de Analisis como de  desarrollo</p>
+    <p>Me apasiona el Desarrollo de Software y el Analisis de datos, realice cursos de distintas indole en Educacion IT.En pareja hace doce años y atento a brindar soluciones a aquellos que lo requieran </p>
+    <p>Hincha de River y el PES  </p>
+    
+  </div>
+
+  {% endblock %}
